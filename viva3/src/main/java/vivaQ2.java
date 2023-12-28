@@ -34,7 +34,7 @@ public class vivaQ2 {
         hogwartsLibrary.addBook(book6);
         hogwartsLibrary.addBook(book7);
         
-        System.out.println("Welcome! Select what to do: \n1 (Search by author)\n2 (Search by title)\n3 (Sort books in the library)\n4 (Borrow a book)");
+        System.out.println("Welcome! Select what to do: \n1 (Search by author)\n2 (Search by title)\n3 (Sort books in the library)\n4 (Borrow a book)\n5 (Exit)");
         num = input.nextInt();
         
         switch (num){
@@ -70,8 +70,10 @@ public class vivaQ2 {
                         System.out.println("Sorry, this book is not available for borrowing.");
                     }
                     break;
+                case 5:
+                    return;
                 default:
-                    System.out.println("Please enter the proper numbers: ");
+                    System.out.println("Please enter the proper number");
                     return;
         }
     }
